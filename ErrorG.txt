@@ -1,5 +1,6 @@
 *git text file with java code inside*
 
+// starter code B //
 function mysteryOperation ()
 {
 	const outcome = Math.random(); // Generates a random number between 0 and 1.
@@ -13,7 +14,7 @@ function mysteryOperation ()
 		throw new Error("The operation is failed mysteriously!");
 	}
 }
-
+// Starter code E //
 let vacationDays = 0;
 const totalMissions = 20;
 
