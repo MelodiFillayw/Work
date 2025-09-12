@@ -1,0 +1,31 @@
+*git text file with java code inside*
+
+function mysteryOperation ()
+{
+	const outcome = Math.random(); // Generates a random number between 0 and 1.
+
+	if (outcome < 0.5)
+	{
+		console.log("The operation is completed successfully!");
+	}
+	else
+	{
+		throw new Error("The operation is failed mysteriously!");
+	}
+}
+
+let vacationDays = 0;
+const totalMissions = 20;
+
+for(let i = 0; i < totalMissions; i++)
+	try{
+		mysteryOperation();
+		vacationDays += 13; //there are 13 days for a successful operation
+		}
+		catch (error){
+		vacationDays += 1; // there is one day for a unsuccessful operation
+		}
+		finally{
+		vacationDays +=3; // 3 days to account for atendance 
+		}
+console.log ('you get a total of __ days of vacation')
